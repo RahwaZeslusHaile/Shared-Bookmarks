@@ -1,0 +1,91 @@
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #111;
+  margin: 0;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 600px;     
+  width: 100%;          
+}
+
+
+input, textarea, select, button {
+  min-height: 44px;        
+  font-size: 16px;
+  padding: 8px 12px;
+  margin-bottom: 16px;     
+  box-sizing: border-box;
+  width: 100%;            
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #f0f0f0;
+  padding: 10px 16px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:focus {
+  outline: 2px solid #0077cc;
+  outline-offset: 2px;
+  background-color: #ddd;
+}
+
+select {
+  min-width: 200px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+
+#bookmarks-list a {
+  display: inline-block;
+  padding: 4px 8px;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+#bookmarks-list a:hover,
+#bookmarks-list a:focus {
+  text-decoration: underline;
+}
+
+#bookmarks-list button {
+  margin-top: 8px;
+  min-width: 60px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid #0077cc;
+  outline-offset: 2px;
+}
+
+h2 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}

@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Shared Bookmarks</title>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.mjs"></script>
+    <link rel="stylesheet" href="styles.css">
   </head>
 <body>
   <main>
@@ -17,9 +18,6 @@
         </select>
       </form>
     </section>
-
-    <hr>
-
     <section aria-labelledby="add-heading">
       <h2 id="add-heading">Add bookmark</h2>
       <form action="" id="data-form">
@@ -27,13 +25,13 @@
           <legend>Bookmark details</legend>
           <label for="title">Title</label>
           <input type="text" name="title" id="title" required>
-          <br>
+          
           <label for="link">Link</label>
           <input type="url" name="link" id="link" required>
-          <br>
+          
           <label for="desc">Description</label>
-          <textarea name="desc" id="desc"></textarea>
-          <br>
+          <textarea name="desc" id="desc" required></textarea>
+          
           <button type="submit" id="btn-submit">Submit</button>
         </fieldset>
       </form>
